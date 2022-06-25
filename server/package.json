@@ -1,0 +1,31 @@
+{
+  "name": "template-node-nasaproject",
+  "version": "1.0.0",
+  "description": "nasa mission control api",
+  "main": "src/server.js",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "cluster": "pm2 start src/server.js -i max"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0",
+    "morgan": "^1.10.0",
+    "pm2": "^5.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "jest": "^28.1.1",
+    "nodemon": "^2.0.16",
+    "prettier": "2.6.2",
+    "supertest": "^6.2.3"
+  }
+}

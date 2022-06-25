@@ -1,0 +1,21 @@
+{
+  "name": "template-node-nasaproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "dev": "npm run server & npm run client",
+    "server": "npm run dev --prefix server",
+    "client": "npm run start --prefix client",
+    "install-all": "npm run install-server & npm run install-client",
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix client",
+    "deploy": "npm run build --prefix client && npm run dev --prefix server",
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
+    "test": "npm test --prefix server && npm test --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
