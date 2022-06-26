@@ -47,3 +47,4 @@ Thumbs.db
 *.sublime*
 node_modules
 .vscode
+secret.txt
